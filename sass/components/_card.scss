@@ -1,0 +1,40 @@
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+
+  &__side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50rem;
+    width: 100%;
+    border-radius: 0.3rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+    font-size: 2rem;
+    color: white;
+    backface-visibility: hidden;
+    transition: all 0.8s ease;
+
+    &--obverse {
+      background-color: $color-white;
+    }
+
+    &--reverse {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+      }
+    }
+  }
+
+  &:hover &__side--obverse {
+    transform: rotateY(180deg);
+  }
+
+  &:hover &__side--reverse {
+    transform: rotateY(0);
+  }
+}
