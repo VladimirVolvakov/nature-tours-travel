@@ -303,6 +303,29 @@ body {
     -webkit-background-clip: text;
     color: transparent; }
 
+.testimonial {
+  width: 75%;
+  margin: 0 auto;
+  padding: 6rem 6rem 6rem 9rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
+  .testimonial > * {
+    transform: skewX(12deg); }
+  .testimonial__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg); }
+  .testimonial__image {
+    height: 100%; }
+  .testimonial__text {
+    transform: skewX(12deg); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -365,3 +388,7 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem;
   margin-top: -10rem; }
+
+.section-testimonials {
+  background-color: #f7f7f7;
+  padding: 15rem 0; }
