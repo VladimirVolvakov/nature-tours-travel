@@ -234,8 +234,8 @@
       <section class="section-testimonials">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
-            <source src="img/video.mp4" type="video/mp4">
-            <source src="img/video.webm" type="video/webm">
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="video/webm" />
             Your browser is not supported!
           </video>
         </div>
@@ -300,12 +300,53 @@
                   <h2 class="heading-secondary">Start booking now</h2>
                 </div>
                 <div class="form__group">
-                  <input id="name" type="text" class="form__input" placeholder="Full name" required>
+                  <input
+                    id="name"
+                    type="text"
+                    class="form__input"
+                    placeholder="Full name"
+                    required
+                  />
                   <label for="name" class="form__label">Full name</label>
                 </div>
                 <div class="form__group">
-                  <input id="email" type="email" class="form__input" placeholder="E-mail address" required>
+                  <input
+                    id="email"
+                    type="email"
+                    class="form__input"
+                    placeholder="E-mail address"
+                    required
+                  />
                   <label for="email" class="form__label">E-mail address</label>
+                </div>
+                <div class="form__group u-mb-md">
+                  <div class="form__radio-group">
+                    <input
+                      name="group-size"
+                      id="small-tours"
+                      type="radio"
+                      class="form__radio-input"
+                    />
+                    <label for="small-tours" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Small tour group</label
+                    >
+                  </div>
+                  <div class="form__radio-group">
+                    <input
+                      name="group-size"
+                      id="large-tours"
+                      type="radio"
+                      class="form__radio-input"
+                    />
+                    <label for="large-tours" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Large tour group</label
+                    >
+                  </div>
+                </div>
+                <div class="form__group">
+                  <button class="btn btn--green">Next step &rarr;</button>
                 </div>
               </form>
             </div>
