@@ -541,6 +541,7 @@ body {
   width: 7rem;
   border-radius: 50%;
   background-color: #fff;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   z-index: 30; }
 
 .nav__background {
@@ -552,6 +553,9 @@ body {
   border-radius: 50%;
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 20;
+  transition: all 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
+
+.nav__checkbox:checked ~ .nav__background {
   transform: scale(100); }
 
 .nav__navbar {
@@ -559,10 +563,17 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100%;
-  z-index: 25; }
+  width: 0;
+  z-index: 25;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
+
+.nav__checkbox:checked ~ .nav__navbar {
+  opacity: 1;
+  width: 100%; }
 
 .nav__nav-list {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
