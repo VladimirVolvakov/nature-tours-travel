@@ -448,6 +448,44 @@ body {
     transform: translateX(-4rem) scale(1);
     filter: blur(0.3rem) brightness(80%); }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  color: #f7f7f7;
+  font-size: 1.4rem; }
+  .footer__logo-container {
+    text-align: center; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__navigation {
+    display: inline-block;
+    border-top: 1px solid #777;
+    padding-top: 2rem; }
+  .footer__nav-list {
+    list-style: none; }
+  .footer__nav-item {
+    display: inline-block; }
+    .footer__nav-item:not(:last-child) {
+      margin-right: 3rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #f7f7f7;
+    background-color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s; }
+  .footer__link:hover, .footer__link:active {
+    color: #55c57a; }
+  .footer__nav-link:link, .footer__nav-link:visited {
+    display: inline-block; }
+  .footer__nav-link:hover, .footer__nav-link:active {
+    transform: rotate(5deg) scale(1.2); }
+  .footer__copyright {
+    width: 80%;
+    float: right;
+    border-top: 1px solid #777;
+    padding-top: 2rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
