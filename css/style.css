@@ -416,9 +416,28 @@ body {
     left: 50%;
     width: 75%;
     border-radius: 0.3rem;
+    overflow: hidden;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     transform: translate(-50%, -50%);
-    background-color: #fff; }
+    background-color: #fff;
+    display: table; }
+  .popup__left {
+    width: 33.33%;
+    display: table-cell; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__right {
+    width: 66.67%;
+    padding: 3rem 5rem;
+    display: table-cell;
+    vertical-align: middle; }
+  .popup__text {
+    font-size: 1.4rem;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #eee;
+    hyphens: auto; }
 
 .testimonial {
   width: 75%;
