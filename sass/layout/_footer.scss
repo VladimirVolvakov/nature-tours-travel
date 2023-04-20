@@ -4,6 +4,10 @@
   color: $color-grey-light-1;
   font-size: 1.4rem;
 
+  @include respond(tab-portrait) {
+    padding: 8rem 0;
+  }
+
   &__logo-container {
     text-align: center;
   }
@@ -17,6 +21,11 @@
     display: inline-block;
     border-top: 1px solid $color-grey-dark-1;
     padding-top: 2rem;
+
+    @include respond(tab-portrait) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__nav-list {
@@ -63,5 +72,10 @@
     float: right;
     border-top: 1px solid $color-grey-dark-1;
     padding-top: 2rem;
+
+    @include respond(tab-portrait) {
+      width: 100%;
+      float: none;
+    }
   }
 }
