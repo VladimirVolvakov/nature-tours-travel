@@ -8,10 +8,18 @@
 
 .u-mb-md {
   margin-bottom: 4rem !important;
+
+  @include respond(tab-portrait) {
+    margin-bottom: 2.5rem !important;
+  }
 }
 
 .u-mb-lg {
   margin-bottom: 8rem !important;
+
+  @include respond(tab-portrait) {
+    margin-bottom: 5rem !important;
+  }
 }
 
 .u-mt-xl {
