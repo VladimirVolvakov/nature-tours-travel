@@ -556,7 +556,11 @@ body {
     .footer {
       padding: 8rem 0; } }
   .footer__logo-container {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 6rem; }
+    @media (max-width: 56.25em) {
+      .footer__logo-container {
+        margin-bottom: 4rem; } }
   .footer__logo {
     width: 15rem;
     height: auto; }
@@ -574,6 +578,9 @@ body {
     display: inline-block; }
     .footer__nav-item:not(:last-child) {
       margin-right: 3rem; }
+      @media (max-width: 56.25em) {
+        .footer__nav-item:not(:last-child) {
+          margin-right: 1rem; } }
   .footer__link:link, .footer__link:visited {
     color: #f7f7f7;
     background-color: #333;
@@ -594,7 +601,8 @@ body {
     @media (max-width: 56.25em) {
       .footer__copyright {
         width: 100%;
-        float: none; } }
+        float: none;
+        text-align: center; } }
 
 .row {
   max-width: 114rem;

@@ -10,6 +10,11 @@
 
   &__logo-container {
     text-align: center;
+    margin-bottom: 6rem;
+
+    @include respond(tab-portrait) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__logo {
@@ -37,8 +42,13 @@
 
     &:not(:last-child) {
       margin-right: 3rem;
+
+      @include respond(tab-portrait) {
+        margin-right: 1rem;
+      }
     }
   }
+
   &__link {
     &:link,
     &:visited {
@@ -76,6 +86,7 @@
     @include respond(tab-portrait) {
       width: 100%;
       float: none;
+      text-align: center;
     }
   }
 }
