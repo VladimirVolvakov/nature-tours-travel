@@ -442,6 +442,9 @@ body {
   border-radius: 0.2rem;
   background-color: rgba(255, 255, 255, 0.5);
   transition: all 0.3s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -467,6 +470,10 @@ body {
 .form__radio-group {
   width: 45%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 1rem; } }
 
 .form__radio-label {
   position: relative;
@@ -912,12 +919,24 @@ body {
       padding: 10rem 0; } }
 
 .booking {
-  height: 50rem;
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
   background-size: cover;
   border-radius: 0.3rem;
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 75em) {
+    .booking {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg); } }
+  @media (max-width: 56.25em) {
+    .booking {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
   .booking__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .booking__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .booking__form {
+        width: 100%;
+        padding: 4rem; } }
