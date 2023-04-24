@@ -166,6 +166,7 @@
   &__price-box {
     text-align: center;
     color: $color-white;
+    margin-bottom: 8rem;
   }
 
   &__price-only {
@@ -176,5 +177,49 @@
   &__price-value {
     font-size: 6rem;
     font-weight: 100;
+  }
+
+  @include respond(tab-portrait) {
+    height: auto;
+    border-radius: 0.3rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+    background-color: $color-white;
+
+    &__side {
+      position: relative;
+      height: auto;
+      box-shadow: none;
+
+      &--reverse {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+
+    &:hover &__side--obverse {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    &__cta {
+      position: relative;
+      width: 100%;
+      top: 0;
+      left: 0;
+      padding: 4rem;
+      padding-top: 7rem;
+      transform: translate(0);
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size: 4rem;
+    }
   }
 }
