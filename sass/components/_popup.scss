@@ -32,6 +32,15 @@
       color: $color-grey-dark-1;
       text-decoration: none;
       transition: all 0.3s;
+
+      @include respond(phone) {
+        top: 2rem;
+        right: 2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 50%;
+        background-color: rgba($color-white, 0.4);
+
+      }
     }
 
     &:hover {
@@ -52,16 +61,29 @@
     display: table;
     opacity: 0;
     transition: all 0.3s;
+
+    @include respond(phone) {
+      padding: 1.5rem 1rem;
+    }
   }
 
   &__left {
     width: 33.33%;
     display: table-cell;
+
+    @include respond(phone) {
+      display: table-row;
+    }
   }
 
   &__img {
     display: block;
     width: 100%;
+
+    @include respond(phone) {
+      display: inline-block;
+      width: 50%;
+    }
   }
 
   &__right {
@@ -69,6 +91,10 @@
     padding: 3rem 5rem;
     display: table-cell;
     vertical-align: middle;
+
+    @include respond(phone) {
+      display: table-row;
+    }
   }
 
   &__text {
@@ -77,5 +103,18 @@
     column-gap: 4rem;
     column-rule: 1px solid $color-grey-light-2;
     hyphens: auto;
+
+    @include respond(phone) {
+      padding: 0 3rem;
+      column-count: 1;
+      text-align: justify;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__center {
+    @include respond(phone) {
+      text-align: center;
+    }
   }
 }

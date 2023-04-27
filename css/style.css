@@ -537,6 +537,13 @@ body {
     color: #777;
     text-decoration: none;
     transition: all 0.3s; }
+    @media (max-width: 37.5em) {
+      .popup__close:link, .popup__close:visited {
+        top: 2rem;
+        right: 2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.4); } }
   .popup__close:hover {
     color: #55c57a; }
   .popup__content {
@@ -552,23 +559,45 @@ body {
     display: table;
     opacity: 0;
     transition: all 0.3s; }
+    @media (max-width: 37.5em) {
+      .popup__content {
+        padding: 1.5rem 1rem; } }
   .popup__left {
     width: 33.33%;
     display: table-cell; }
+    @media (max-width: 37.5em) {
+      .popup__left {
+        display: table-row; } }
   .popup__img {
     display: block;
     width: 100%; }
+    @media (max-width: 37.5em) {
+      .popup__img {
+        display: inline-block;
+        width: 50%; } }
   .popup__right {
     width: 66.67%;
     padding: 3rem 5rem;
     display: table-cell;
     vertical-align: middle; }
+    @media (max-width: 37.5em) {
+      .popup__right {
+        display: table-row; } }
   .popup__text {
     font-size: 1.4rem;
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid #eee;
     hyphens: auto; }
+    @media (max-width: 37.5em) {
+      .popup__text {
+        padding: 0 3rem;
+        column-count: 1;
+        text-align: justify;
+        font-size: 1.2rem; } }
+  @media (max-width: 37.5em) {
+    .popup__center {
+      text-align: center; } }
 
 .testimonial {
   width: 75%;
@@ -728,10 +757,13 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 112.5em) {
+    .header {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg); } }
   @media (max-width: 37.5em) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
